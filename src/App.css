@@ -1,1 +1,23 @@
 /* Other rules */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: grey;
+  height: 800px;
+}
+
+.buttons {
+  display: inherit;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: purple;
+  height: 150px;
+  width: 150px;
+  margin-right: 0 auto;
+}
+
+.active {
+  background-color: #3377ff;
+}
