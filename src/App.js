@@ -9,9 +9,17 @@ function App() {
     { type: "Shop", isActive: true },
     { type: "Pro", isActive: true },
   ]);
+  const [count, setCount] = useState(0);
 
   const handleCheck = (index) => {
     let toggle = [...list];
+    setCount(count + 1);
+    if (count < 1) {
+      toggle.forEach((elem) => {
+        elem.isActive = false;
+      });
+    }
+    // console.log(toggle.isActive);
     toggle[index].isActive = !toggle[index].isActive;
     setList(toggle);
   };
